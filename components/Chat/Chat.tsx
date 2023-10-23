@@ -352,17 +352,17 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
       {!(apiKey || serverSideApiKeyIsSet) ? (
         <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
           <div className="text-center text-4xl font-bold text-black dark:text-white">
-            Welcome to AegisWeb3 GPT
+            Welcome to 塔塔开 MCN GPT
           </div>
           <div className="text-center text-lg text-black dark:text-white">
-            <div className="mb-8">{`AegisWeb3 GPT is an open source clone of OpenAI's ChatGPT UI.`}</div>
+            <div className="mb-8">{`塔塔开 MCN GPT is an open source clone of OpenAI's ChatGPT UI.`}</div>
             <div className="mb-2 font-bold">
               Important: Use it carefully.
             </div>
           </div>
           <div className="text-center text-gray-500 dark:text-gray-400">
             <div className="mb-2">
-              AegisWeb3 GPT allows you to plug in your API key to use this UI with
+              塔塔开 MCN GPT allows you to plug in your API key to use this UI with
               their API.
             </div>
             <div className="mb-2">
@@ -405,7 +405,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                         <Spinner size="16px" className="mx-auto" />
                       </div>
                     ) : (
-                      'AegisWeb3 GPT'
+                      '塔塔开 MCN GPT'
                     )}
                   </div>
 

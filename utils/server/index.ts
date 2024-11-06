@@ -98,7 +98,13 @@ export const OpenAIStream = async (
             if (json.object == "") {
               return;
             }
+            // 3.5 models
             if (json.choices[0].finish_reason != null) {
+              controller.close();
+              return;
+            }
+            // 4.0 models
+            if (json.choices[0].finish_details != null) {
               controller.close();
               return;
             }

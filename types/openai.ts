@@ -11,6 +11,7 @@ export enum OpenAIModelID {
   GPT_3_5 = 'gpt-3.5-turbo',
   GPT_3_5_AZ = 'gpt-35-turbo',
   GPT_4 = 'gpt-4',
+  GPT_4_O = 'gpt-4o',
   GPT_4_32K = 'gpt-4-32k',
 }
 
@@ -35,6 +36,12 @@ export const OpenAIModels: Record<OpenAIModelID, OpenAIModel> = {
     name: 'GPT-4',
     maxLength: 24000,
     tokenLimit: 8000,
+  },
+  [OpenAIModelID.GPT_4_O]: {
+    id: OpenAIModelID.GPT_4_O,
+    name: 'GPT-4o',
+    maxLength: 120000,
+    tokenLimit: 40960,
   },
   [OpenAIModelID.GPT_4_32K]: {
     id: OpenAIModelID.GPT_4_32K,
